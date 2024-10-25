@@ -1,0 +1,91 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #00000080; /* Dark background for the navbar */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    right: 0;
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin-left: 25px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #f0a500; /* Accent color for hover effect */
+  }
+  
+  /* Book Button Style */
+  .book-button {
+    background-color: #DBF056;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #005417;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #218838;
+  }
+
+  .nav-links{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: baseline;
+
+    li{
+        font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 20.26px;
+text-align: left;
+color: #FFFFFF;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  }
+  
